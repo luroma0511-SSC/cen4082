@@ -1,10 +1,15 @@
-package code;
+package com.seminolestate.luroma.code;
 
 public class Fibonacci {
 	public static void main(String[] args){
 		int term = 10;
+
+		long start = System.nanoTime();
 		int result = fibonacci(term);
-		System.out.println("The " + term + "th term of the Fibonacci sequence is " + result + "."); 
+		long end = System.nanoTime();
+
+		System.out.println("The " + term + "th term of the Fibonacci sequence is " + result + ".");
+		System.out.println("Execution time (ns): " + (end - start));
 	}
 
 	/** 
@@ -16,7 +21,7 @@ public class Fibonacci {
 	 * @param number the position in the Fibonacci sequence to calculate.
 	 * @return the Fibonacci number at the given position.
 	 */
-	private static int fibonacci(int number){
+	public static int fibonacci(int number){
 		if (number <= 1){
 			return number;
 		}
