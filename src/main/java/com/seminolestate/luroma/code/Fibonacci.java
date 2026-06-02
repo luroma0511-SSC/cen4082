@@ -3,13 +3,8 @@ package com.seminolestate.luroma.code;
 public class Fibonacci {
 	public static void main(String[] args){
 		int term = 10;
-
-		long start = System.nanoTime();
 		int result = fibonacci(term);
-		long end = System.nanoTime();
-
 		System.out.println("The " + term + "th term of the Fibonacci sequence is " + result + ".");
-		System.out.println("Execution time (ns): " + (end - start));
 	}
 
 	/** 
