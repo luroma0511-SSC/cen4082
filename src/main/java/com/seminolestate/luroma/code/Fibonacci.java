@@ -5,6 +5,7 @@ public class Fibonacci {
 		int term = 10;
 		int result = fibonacci(term);
 		System.out.println("The " + term + "th term of the Fibonacci sequence is " + result + ".");
+		System.out.println("Execution complete!");
 	}
 
 	/** 
